@@ -1,7 +1,16 @@
-import type * as _BSON from 'bson';
-let BSON: typeof _BSON = require('bson');
-try {
-  BSON = require('bson-ext');
-} catch {} // eslint-disable-line
-
-export = BSON;
+export {
+  Long,
+  Binary,
+  ObjectId,
+  Timestamp,
+  Code,
+  MinKey,
+  MaxKey,
+  Decimal128,
+  Int32,
+  Double,
+  DBRef,
+  deserialize,
+  serialize,
+  calculateObjectSize
+} from 'bson';
